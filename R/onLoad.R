@@ -3,5 +3,6 @@ CAD_OSE <- NULL
   CAD_OSE <<- reticulate::import_from_path("CAD_OSE", 
                                            system.file("python", "CAD", 
                                                        package = utils::packageName(), 
-                                                       mustWork = TRUE))
+                                                       mustWork = TRUE),
+                                           delay_load = TRUE)
 }
